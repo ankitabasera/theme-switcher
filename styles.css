@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+h1
+{
+	font-size: 50px;
+}
+p
+{
+	font-size: 25px;
+}
+.dark{
+  color: #FFFFFF;
+  background-color:#000000;
+}
+
+
+.light{
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 68px;
+  height: 40px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #D198C5FF;
+  transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 45px;
+  width: 45px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  transition: 0.5s;
+  transition: 0.5s;
+  box-shadow: 0 0px 15px #2020203d;
+  background: white url('dark mode1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .slider {
+  background-color: #CBCE91FF;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+  transform: translateX(24px);
+  transform: translateX(24px);
+  background: white url('light mode.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider {
+  border-radius:50px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
