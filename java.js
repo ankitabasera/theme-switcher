@@ -2,7 +2,7 @@ function changetheme()
 {
 	var v1 = document.body; 
 	var theme = v1.classList;
-	if(theme == "light")
+	if(theme === "light")
 	{
 		theme.toggle("dark");
 		document.getElementById("para").innerHTML = "Current theme is Dark.";
